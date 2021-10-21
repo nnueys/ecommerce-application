@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#orderButton" prefHeight="180.0" prefWidth="220.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ProductGridInEachShopController">
+    <children>
+        <ImageView fx:id="productImageView" fitHeight="117.0" fitWidth="117.0" layoutX="52.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="nameLabel" layoutX="23.0" layoutY="135.0" prefHeight="23.0" prefWidth="171.0" text="namepro">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="154.0" prefHeight="21.0" text="฿" />
+        <Label fx:id="priceLabel" layoutX="36.0" layoutY="155.0" prefHeight="18.0" prefWidth="101.0" text="price" />
+    </children>
+</AnchorPane>

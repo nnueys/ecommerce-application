@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.EditProductController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="292.0" layoutY="65.0" text="EDIT PRODUCT" textFill="#a98a68">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="150.0" text="PRODUCT NAME" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="242.0" text="PRICE" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="398.0" text="ADD QUANTITY" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameEditTextField" alignment="CENTER" layoutX="407.0" layoutY="190.0" prefHeight="40.0" prefWidth="280.0" promptText="Enter Product Name" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="priceEditTextField" alignment="CENTER" layoutX="407.0" layoutY="282.0" prefHeight="40.0" prefWidth="280.0" promptText="Enter Price" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="quantityEditTextField" alignment="CENTER" layoutX="407.0" layoutY="438.0" prefHeight="40.0" prefWidth="189.0" promptText="Enter Quantity" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="664.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleUseEditButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleBackEditButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitEditButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitEditButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="610.0" layoutY="445.0" mnemonicParsing="false" onAction="#AddQuantityButton" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="Add" textFill="WHITE" />
+      <ImageView fx:id="productImageView" fitHeight="300.0" fitWidth="300.0" layoutX="55.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="changeProductImageButton" layoutX="135.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleChangeProductImageButton" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="CHANGE PICTURE" textFill="WHITE" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: fffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ReportReviewController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="250.0" layoutY="147.0" text="REPORT REVIEW" textFill="#a98a68">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#backButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 50; -fx-background-color: #CDBBA7;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="667.0" layoutY="527.0" mnemonicParsing="false" onAction="#getReportComboBox" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 100; -fx-background-color: #CDBBA7;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="335.0" layoutY="337.0" text="MORE REASON" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reportReviewText" layoutX="253.0" layoutY="401.0" prefHeight="30.0" prefWidth="287.0" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboBox" layoutX="254.0" layoutY="265.0" prefHeight="30.0" prefWidth="287.0" style="-fx-background-radius: 100; -fx-background-color: F6E6CB;" />
+      <Label layoutX="310.0" layoutY="226.0" text="CHOOSE REPORT TYPE" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="notificationLabel" alignment="CENTER" layoutX="158.0" layoutY="370.0" prefHeight="23.0" prefWidth="484.0" textFill="#dc5533">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

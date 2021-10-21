@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ConfirmAddProductController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="419.0" layoutY="190.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="nameConfirmLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="nameConfirmLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox layoutX="419.0" layoutY="280.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="descriptionConfirmLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="descriptionConfirmLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox layoutX="419.0" layoutY="370.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="priceConfirmLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="priceConfirmLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox layoutX="419.0" layoutY="460.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="quantityConfirmLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="quantityConfirmLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="200.0" layoutY="65.0" text="CONFIRM ADD PRODUCT" textFill="#a98a68">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="160.0" prefHeight="23.0" prefWidth="148.0" text="PRODUCT NAME" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="250.0" text="PRODUCT DESCRIPTION" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="340.0" text="PRICE" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="430.0" text="STOCK" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="655.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleUseConfirmButton" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="CONFIRM" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitConfirmButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitConfirmButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="productImageView" fitHeight="300.0" fitWidth="300.0" layoutX="55.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

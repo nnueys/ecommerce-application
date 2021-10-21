@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ConfirmEditProductController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="407.0" layoutY="217.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="nameEditSaveProductLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="nameEditSaveProductLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="407.0" layoutY="312.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="priceEditSaveProductLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="priceEditSaveProductLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="407.0" layoutY="402.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: #F6E6CB; -fx-background-radius: 100;">
+         <children>
+            <Label fx:id="quantityEditSaveProductLabel" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="quantityEditSaveProductLabel" textFill="#726659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="190.0" layoutY="65.0" text="CONFIRM EDIT PRODUCT" textFill="#a98a68">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="177.0" text="PRODUCT NAME" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="272.0" text="PRICE" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="362.0" text="STOCK" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="664.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleUseConfirmEditProductButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitSaveEditButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitSaveEditButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="productImageView" fitHeight="300.0" fitWidth="300.0" layoutX="55.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleBackToEditProductButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

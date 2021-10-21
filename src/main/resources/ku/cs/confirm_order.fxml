@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ConfirmOrderController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="productImageView" fitHeight="300.0" fitWidth="300.0" layoutX="100.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="467.0" layoutY="210.0" text="PRODUCT NAME :" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameProduct" layoutX="630.0" layoutY="210.0" text="Label" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="290.0" text="AMOUNT :" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountProduct" layoutX="570.0" layoutY="290.0" text="Label" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="360.0" text="TOTAL PRICE :" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPrice" layoutX="600.0" layoutY="360.0" text="Label" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="64.0" text="CONFIRM ORDER" textFill="#a98a68">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleUseConfirmAddOrderProductButton" prefHeight="45.0" style="-fx-background-color: #cabba7; -fx-background-radius: 100;" text="CONFIRM" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="48.0" layoutY="526.0" mnemonicParsing="false" onAction="#backButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

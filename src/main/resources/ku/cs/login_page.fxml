@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: FFFCF9;" styleClass="primary-color" stylesheets="@../../../java/styles/light_mode.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.LogInUserController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-5.0" prefHeight="604.0" prefWidth="405.0" style="-fx-background-color: F6e6CB;">
+         <children>
+            <ImageView fitHeight="606.0" fitWidth="456.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/bg3.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="370.0" fitWidth="378.0" layoutX="20.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/LOGO.PNG" />
+               </image>
+            </ImageView>
+            <Button layoutX="120.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleUseRegisterUserButton" prefHeight="50.0" prefWidth="140.0" style="-fx-background-radius: 100; -fx-background-color: fffcf9;" text="REGISTER" textFill="#a98a68" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="loginLabel" contentDisplay="CENTER" layoutX="540.0" layoutY="72.0" text="LOG IN" textFill="#a98a68" textOverrun="CLIP">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="171.0" text="USERNAME" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="435.0" layoutY="210.0" prefHeight="65.0" prefWidth="333.0" promptText="username" style="-fx-background-radius: 100; -fx-background-color: F6E6CB;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="round-border" />
+            <String fx:value="primary-color" />
+            <String fx:value="secondary-color" />
+         </styleClass></TextField>
+      <Label layoutX="435.0" layoutY="302.0" text="PASSWORD" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="435.0" layoutY="337.0" prefHeight="65.0" prefWidth="333.0" promptText="password" style="-fx-background-radius: 100; -fx-background-color: F6E6CB F6E6CB;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="primary-color" />
+            <String fx:value="round-border" />
+            <String fx:value="secondary-color" />
+         </styleClass></PasswordField>
+      <Label fx:id="notificationLabel" alignment="CENTER" layoutX="441.0" layoutY="121.0" prefHeight="23.0" prefWidth="323.0" textFill="#dc5533">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="adminImageView" fitHeight="50.0" fitWidth="50.0" layoutX="725.0" layoutY="540.0" onDragEntered="#handleAdminLoginPage" onMouseClicked="#handleAdminLoginPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/2794704.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="435.0" layoutY="430.0" mnemonicParsing="false" onAction="#loginDone" prefHeight="65.0" prefWidth="333.0" style="-fx-background-radius: 100; -fx-background-color: CDBBA7;" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="416.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleCreatorButton" style="-fx-background-radius: 100; -fx-background-color: CDBBA7 CDBBA7;" text="CREATOR" textFill="WHITE" />
+      <Button layoutX="500.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleTipsButton" style="-fx-background-radius: 100; -fx-background-color: CDBBA7 CDBBA7;" text="TIPS" textFill="WHITE" />
+      <Button fx:id="exitButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

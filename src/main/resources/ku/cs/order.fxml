@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fffcf9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.OrderController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/finish_order.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="431.0" layoutY="176.0" text="PRICE :" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="431.0" layoutY="341.0" text="AMOUNT" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="431.0" layoutY="386.0" text="STOCK" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label fx:id="amountProduct" layoutX="509.0" layoutY="386.0" text="Label" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label fx:id="priceProduct" alignment="CENTER" layoutX="501.0" layoutY="176.0" prefHeight="23.0" prefWidth="74.0" text="lable" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="581.0" layoutY="176.0" text="BAHT" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label fx:id="nameProduct" layoutX="591.0" layoutY="126.0" text="nameproduct" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="48.0" layoutY="526.0" mnemonicParsing="false" onAction="#backButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #cabba7#cabba7; -fx-background-radius: 100;" text="BACK" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+            <Button layoutX="441.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleUseOrderProductButton" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #cabba7#cabba7; -fx-background-radius: 100;" text="BUY" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+        </Button>
+        <Button layoutX="586.0" layoutY="532.0" mnemonicParsing="false" onAction="#reportProductButton" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="REPORT PRODUCT" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="orderProduct" layoutX="521.0" layoutY="335.0" prefHeight="35.0" prefWidth="64.0" style="-fx-background-radius: 100;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="431.0" layoutY="126.0" text="PRODUCT NAME :" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="431.0" layoutY="226.0" text="DESCRIPTION :" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="431.0" layoutY="76.0" prefHeight="35.0" text="SHOP'S NAME :" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="nameShop" layoutX="571.0" layoutY="82.0" onMouseClicked="#shopMarket" text="Label" textFill="#a98a68">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="productImageView" fitHeight="250.0" fitWidth="250.0" layoutX="87.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="exitButton" layoutX="740.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleExitButton" style="-fx-background-color: ffcf9;" text="X" textFill="#a98a68">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ListView fx:id="reviewListView" layoutX="68.0" layoutY="359.0" prefHeight="148.0" prefWidth="300.0" />
+      <Label layoutX="70.0" layoutY="322.0" text="RATINGS" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="averageStarLabel" layoutX="152.0" layoutY="322.0" prefHeight="23.0" prefWidth="29.0" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="322.0" text="(" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="322.0" text="REVIEWS )" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="countPeople" alignment="CENTER" layoutX="205.0" layoutY="322.0" prefHeight="23.0" prefWidth="18.0" textFill="#a98a68">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="notificationLabel" layoutX="431.0" layoutY="305.0" prefHeight="23.0" prefWidth="330.0" textFill="#dc5533">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="reportReview" layoutX="199.0" layoutY="532.0" mnemonicParsing="false" onAction="#reportReviewButton" style="-fx-background-color: #CDBBA7; -fx-background-radius: 100;" text="REPORT REVIEW" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="descriptionProduct" layoutX="431.0" layoutY="266.0" prefHeight="20.0" prefWidth="351.0" text="Label" textFill="#a98a68">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
