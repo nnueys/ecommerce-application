@@ -1,3 +1,6 @@
+## UI Design
+https://www.figma.com/file/VdwV8g57EANozfcoeEWwoh/NONNON?node-id=0%3A1
+
 ## วิธีการติดตั้งหรือรันโปรแกรม
 สำหรับระบบปฏิบัติการMacOS
 1. clone git โปรเจคจาก git hub
